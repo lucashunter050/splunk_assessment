@@ -3,7 +3,7 @@ document.getElementById('greeting').textContent = `Welcome, ${sessionStorage.get
 document.getElementById('splunkSearch').addEventListener('submit', async function(event) {
   event.preventDefault();
   let container = document.getElementById('output');
-  container.className = '';
+  container.className = 'processing';
   container.innerHTML = "Processing search...";
   const searchTerms = 'search ' + document.getElementById('searchQuery').value;
   const apiBaseURL = `https://${sessionStorage.getItem('host')}:${sessionStorage.getItem('port')}`;
@@ -84,6 +84,7 @@ async function displayResults(xmlResponse) {
   console.log('results gotten: ', results);
 
   let container = document.getElementById('output');
+  container.className = '';
   container.innerHTML = "";
 
   // if no results, print that
