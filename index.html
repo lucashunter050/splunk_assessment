@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Splunk</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="formBody">
+    <h1>Splunk Enterprise</h1>
+    <p>Please enter your Splunk Enterprise credentials</p>
+    <div class="loginForm">
+    <form id="loginForm">
+      <fieldset>
+        <label for="urlInput">Enter Your Splunk Instance Host: <input id="urlInput" name="urlInput" type="text" required placeholder="localhost"/></label>
+        <label for="urlInput">Enter Your Splunk Instance Port Number: <input id="portInput" name="portInput" type="text" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Login Credentials</legend>
+        <label for="username">Enter Your Username: <input id="username" name="username" type="text" required /></label>
+        <label for="password">Enter Your Password: <input id="password" name="password" type="password" required /></label>
+      </fieldset>
+      <div class="loginResult" id="result"></div>
+      <input type="submit" value="Submit" />
+    </form>
+    </div>
+    <img src="splunk.png" class="splunkLogo" />
+    <script src="index.js">
+    </script>
+
+  </body>
+</html>

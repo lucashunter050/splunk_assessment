@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Splunk Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <h1 id="greeting">Welcome, </h1>
+  <form id="splunkSearch" class="splunkSearch">
+    <label for="searchQuery">Enter search query: <input id="searchQuery" name="searchQuery" required /></label>
+    <input type="submit" value="Search" />
+  </form>
+
+  <div id="output" class="output"></div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

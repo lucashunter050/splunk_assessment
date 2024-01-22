@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(134, 174, 106);
+  color: white;
+}
+
+form {
+  margin: 0 auto;
+  background-color: rgb(154, 194, 126);
+  width: 60vw;
+  padding-bottom: 2em;
+  font-family: Tahoma;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+h1 {
+  margin: 1em auto;
+  color: white;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+p {
+  margin: 1em auto;
+  color: white;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 2rem); 
+  padding: 0.5em; 
+  margin-bottom: 1em; 
+  margin-top: 1em;
+  border: none;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgb(134, 174, 106);
+  color: white;
+  border: rgb(114, 154, 86);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(114, 154, 86);
+}
+
+.splunkLogo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+.loginResult {
+  display: block;
+  margin: 0.5rem 0;
+  text-align: center;
+}
